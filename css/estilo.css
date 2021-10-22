@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15%;
+    padding: 10px;
+
+}
+
+
+#formas-de-pagamento {
+    color: red;
+}
+
+#rodape {
+    text-align: center;
+    
+}
+
+
+/* PRODUTOS */
+.categorias {
+    display: block;
+    margin-top: 5%;
+    width: 20%;
+    padding: 2px
+}
+
+.categorias ul {
+    list-style: none; 
+    padding: 2px;
+}
+
+.categorias ul:hover {
+    cursor: pointer;
+}
+
+.categorias li {
+    margin-bottom: 5px;
+}
+
+.classe1_produtos{
+    display: flex;
+    margin-left: 20%;
+    margin-right: 8%;
+    margin-top: -13%;
+    align-items: baseline;
+}
+.produtos {
+    display: flex;
+    margin-left: 20%;
+    margin-right: 8%;
+    align-items:baseline;
+}
+
+.box_produto {
+    margin-left: 10%;
+}
+
+
+.preco {
+  color: red; 
+  margin-top: -15px;
+ 
+}
+
+.descricao {
+    font-size: small;
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .menu{
+        display: flex;
+        flex-direction: row;
+    }
+}
+

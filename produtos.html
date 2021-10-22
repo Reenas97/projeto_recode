@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang= "pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Produtos - Full Stack Eletro</title>
+        <link rel="stylesheet" href="./css/estilo.css">
+    </head>
+    <body>
+        <div class = "todo_conteudo">
+            <!--MENU-->
+            <nav class = "menu">
+                <a href="index.html"> <img width = "100px" src = "./imagens/logo.png" alt = "Full Stack Eletro"> </a>
+                <a href="produtos.html">Nossos Produtos</a>
+                <a href="loja.html">Nossas Lojas</a>
+                <a href="contato.html">Fale Conosco </a>
+            </nav>
+            <!--MENU -->
+    
+            <header>
+                <h1>Produtos</h1>
+            </header>
+            <hr>
+    
+            <section class="categorias">
+                <div>
+                    <h3>Categorias</h3>
+                    <ul>
+                        <li onclick = "exibirTodas()">Todas as Categorias (12)</li>
+                        <li onclick = "exibirCategoria('geladeira')">Geladeiras (3)</li>
+                        <li onclick = "exibirCategoria('fogao')">Fogões (2)</li>
+                        <li onclick = "exibirCategoria('microondas')">Microondas (3)</li>
+                        <li onclick = "exibirCategoria('maquinasLavar')">Máquinas de Lavar (2)</li>
+                        <li onclick = "exibirCategoria('lavaloucas')">Lava-Louças (2)</li>
+                    </ul>
+                </div>
+            
+            </section>
+    
+            <section class = "classe1_produtos">
+    
+                <div class = "box_produto" id ="geladeira" style = "display:block"> 
+                    <img src="./imagens/geladeira.png" width = "120px" onclick = "destacaImagem(this)">
+                    <br>
+                    <p class="descricao">Geladeira Frost Free Brastemp Side Inverse 540 litros</p> 
+                    <hr>
+                    <p class= "descricao"><strike>R$ 6.389,00</strike></p>
+                    <br>
+                    <p class ="preco">R$ 5.019,00</p> 
+                </div>
+    
+                <div class = "box_produto" id ="geladeira" style = "display:block"> 
+                    <img src="./imagens/geladeira consul.png" width = "120px" onclick = "destacaImagem(this)">
+                    <br>
+                    <p class="descricao">Refrigerador Consul CRD37EB com Prateleiras Removíveis e Reguláveis Branco - 334L</p> 
+                    <hr>
+                    <p class= "descricao"><strike>R$ R$ 1.999,00</strike></p>
+                    <br>
+                    <p class ="preco">1.799,00</p> 
+                </div>
+    
+                <div class = "box_produto" id ="geladeira" style = "display:block"> 
+                    <img src="./imagens/geladeira philco.png" width = "120px" onclick = "destacaImagem(this)">
+                    <br>
+                    <p class="descricao">Geladeira Side By Side Eco Inverter Philco 434 Litros Inox PRF533ID - 110V</p> 
+                    <hr>
+                    <p class= "descricao"><strike>R$ 4.299,00</strike></p>
+                    <br>
+                    <p class ="preco">R$ 3.999,00</p> 
+                </div>
+    
+                <div class = "box_produto" id ="fogao" style = "display:block"> 
+                    <img src="./imagens/fogao agata.png" width = "120px" onclick = "destacaImagem(this)">
+                    <br>
+                    <p class="descricao">Fogão Esmaltec 4 Bocas Ágata 4062 - Branco</p> 
+                    <hr>
+                    <p class= "descricao"><strike>R$ 689,00</strike></p>
+                    <br>
+                    <p class ="preco">R$ 679,00</p> 
+                </div>
+            </section>
+                <br>
+            <section class = "produtos">
+                <div class = "box_produto" id ="fogao" style = "display:block"> 
+                    <img src="./imagens/fogao consul.png" width = "120px" onclick = "destacaImagem(this)">
+                    <br>
+                    <p class="descricao">Fogão Consul 6 Bocas CFS6NAR com Tecnologia Cleartec - Inox</p> 
+                    <hr>
+                    <p class= "descricao"><strike>R$ 1.489,00</strike></p>
+                    <br>
+                    <p class ="preco">R$ 1.200,00</p> 
+                </div>
+            
+                <div class = "box_produto" id ="microondas" style = "display:block"> 
+                    <img src="./imagens/microondas eletrolux.png" width = "120px" onclick = "destacaImagem(this)">
+                    <br>
+                    <p class="descricao">Microondas Electrolux 20 Litros Branco MTD30</p> 
+                    <hr>
+                    <p class= "descricao"><strike>R$ 469,00</strike></p>
+                    <br>
+                    <p class ="preco">R$ 460,00</p> 
+                </div>
+    
+                <div class = "box_produto" id ="microondas" style = "display:block"> 
+                    <img src="./imagens/microondas midea.png" width = "120px" onclick = "destacaImagem(this)">
+                    <br>
+                    <p class="descricao">Micro-Ondas Midea 20 Litros Prata Espelhado MRAE21 - 110V</p> 
+                    <hr>
+                    <p class= "descricao"><strike>R$ 490,00</strike></p>
+                    <br>
+                    <p class ="preco">R$ 476,00</p> 
+                </div>
+        
+                <div class = "box_produto" id ="microondas" style = "display:block"> 
+                    <img src="./imagens/microondas philco.png" width = "120px" onclick = "destacaImagem(this)">
+                    <br>
+                    <p class="descricao">Micro-Ondas - Philco 26L Inox PMO26INOX 1400w</p> 
+                    <hr>
+                    <p class= "descricao"><strike>R$ 574,00</strike></p>
+                    <br>
+                    <p class ="preco">R$ 524,00</p> 
+                </div>
+            </section>
+            <section class = "produtos">
+                <br>
+                <div class = "box_produto" id = "maquinasLavar" style = "display:block"> 
+                    <img src="./imagens/maquina de lavar eletrolux.png" width = "120px" onclick = "destacaImagem(this)">
+                    <br>
+                    <p class="descricao">Máquina de Lavar 8,5Kg Electrolux LES09 Branca 127V</p> 
+                    <hr>
+                    <p class= "descricao"><strike>R$ 1.299,00</strike></p>
+                    <br>
+                    <p class ="preco">R$ 1.099,00</p> 
+                </div>
+    
+                <div class = "box_produto" id = "maquinasLavar" style = "display:block"> 
+                    <img src="./imagens/maquina de lavar brastemp.png" width = "120px" onclick = "destacaImagem(this)">
+                    <br>
+                    <p class="descricao">Máquina de Lavar Brastemp 15kg titânio com Ciclo Edredom Especial e Enxágue Anti-Alérgico - BWN15AT</p> 
+                    <hr>
+                    <p class= "descricao"><strike>R$ 3.689,00</strike></p>
+                    <br>
+                    <p class ="preco">R$ 3.229,00</p> 
+                </div>
+    
+                <div class = "box_produto" id ="lavaloucas" style = "display:block"> 
+                    <img src="./imagens/lava louças brastemp.png" width = "120px" onclick = "destacaImagem(this)">
+                    <br>
+                    <p class="descricao">Lava-louças Brastemp BLF08AS Ative! 8 Serviços - Prata</p> 
+                    <hr>
+                    <p class= "descricao"><strike>R$ 1.999,00</strike></p>
+                    <br>
+                    <p class ="preco">R$ 1.799,00</p> 
+                </div>
+    
+                <div class = "box_produto" id ="lavaloucas" style = "display:block"> 
+                    <img src="./imagens/lava louças brastemp 2.png" width = "120px" onclick = "destacaImagem(this)">
+                    <br>
+                    <p class="descricao">Lava-Louças Brastemp BLF14AR 14 Serviços com Painel Touch - Inox</p> 
+                    <hr>
+                    <p class= "descricao"><strike>R$ 4.499,00</strike></p>
+                    <br>
+                    <p class ="preco">R$ 4.239,00</p> 
+                </div>
+            </section>
+            <!-- <h2>Produtos</h2>
+            <hr>
+            <table border = 0 width = "100%" cellpadding =>
+                <tr>
+                    <td rowspan = "5" width = 20% valign="top">
+                        <h3><font face = "Arial"> Categorias</font></h3>
+                        <ol>
+                            <li><font>Geladeiras (3)</font></li>
+                            <li><font>Fogões (2)</font></li>
+                            <li><font>Microondas (3)</font></li>
+                            <li><font>Máquinas de Lavar (2)</font></li>
+                            <li><font>Lava-Louças (2)</font></li>
+                        </ol>
+                    </td>
+    
+                    <td width = "20%" align="center" valign = "bottom" >
+                       <img src="./imagens/geladeira.png" width = "120px">
+                       <br>
+                       <font face = "Arial" size="2">Geladeira Frost Free Brastemp Side Inverse 540 litros</font> 
+                       <hr>
+                       <font face ="Arial" size="2"><strike>R$ 6.389,00</strike></strike></font><br>
+                       <font face ="Arial" size="4" color ="red">R$ 5.019,00</font><br>
+    
+                    </td>
+                    <td width = "20%" align="center" valign = "bottom" >
+    
+                        <img src="./imagens/geladeira consul.png" width = "120px">
+                        <br>
+                        <font face = "Arial" size="2">Refrigerador Consul CRD37EB com Prateleiras Removíveis e Reguláveis Branco - 334L</font> 
+                        <hr>
+                        <font face ="Arial" size="2"><strike>R$ 1.999,00</strike></strike></font><br>
+                        <font face ="Arial" size="4" color ="red">R$ 1.799,00</font><br>
+    
+                     </td>
+                     <td width = "20%" align="center" valign = "bottom" >
+    
+                        <img src="./imagens/geladeira philco.png" width = "120px">
+                        <br>
+                        <font face = "Arial" size="2">Geladeira Side By Side Eco Inverter Philco 434 Litros Inox PRF533ID - 110V</font> 
+                        <hr>
+                        <font face ="Arial" size="2"><strike>R$ 4.299,00</strike></strike></font><br>
+                        <font face ="Arial" size="4" color ="red">R$ 3.999,00</font><br>
+    
+                     </td>
+                     <td width = "20%" align="center" valign = "bottom" >
+    
+                        <img src="./imagens/fogao agata.png" width = "120px">
+                        <br>
+                        <font face = "Arial" size="2">Fogão Esmaltec 4 Bocas Ágata 4062 - Branco</font> 
+                        <hr>
+                        <font face ="Arial" size="2"><strike>R$ 689,00</strike></strike></font><br>
+                        <font face ="Arial" size="4" color ="red">R$ 679,00</font><br>
+    
+                     </td>
+                     <tr>
+                        <td width = "20%" align="center" valign = "bottom" >
+    
+                            <img src="./imagens/fogao consul.png" width = "120px">
+                            <br>
+                            <font face = "Arial" size="2">Fogão Consul 6 Bocas CFS6NAR com Tecnologia Cleartec - Inox</font> 
+                            <hr>
+                            <font face ="Arial" size="2"><strike>R$ 1.489,00</strike></strike></font><br>
+                            <font face ="Arial" size="4" color ="red">R$ 1.200,00</font><br>
+    
+                         </td>
+                         <td width = "20%" align="center" valign = "bottom" >
+    
+                            <img src="./imagens/microondas eletrolux.png" width = "120px">
+                            <br>
+                            <font face = "Arial" size="2">Microondas Electrolux 20 Litros Branco MTD30</font> 
+                            <hr>
+                            <font face ="Arial" size="2"><strike>R$ 469,00</strike></strike></font><br>
+                            <font face ="Arial" size="4" color ="red">R$ 460,00</font><br>
+    
+                         </td>
+                         <td width = "20%" align="center" valign = "bottom" >
+                             
+                            <img src="./imagens/microondas midea.png" width = "120px">
+                            <br>
+                            <font face = "Arial" size="2">Micro-Ondas Midea 20 Litros Prata Espelhado MRAE21 - 110V</font> 
+                            <hr>
+                            <font face ="Arial" size="2"><strike>R$ 490,00</strike></strike></font><br>
+                            <font face ="Arial" size="4" color ="red">R$ 476,00</font><br>
+    
+                         </td>
+                         <td width = "20%" align="center" valign = "bottom" >
+    
+                            <img src="./imagens/microondas philco.png" width = "120px">
+                            <br>
+                            <font face = "Arial" size="2">Micro-Ondas - Philco 26L Inox PMO26INOX 1400w</font> 
+                            <hr>
+                            <font face ="Arial" size="2"><strike>R$ 574,00</strike></strike></font><br>
+                            <font face ="Arial" size="4" color ="red">R$ 524,00</font><br>
+                         </td>
+                     </tr>
+                     <tr>
+                        <td width = "20%" align="center" valign = "bottom" >
+    
+                            <img src="./imagens/maquina de lavar eletrolux.png" width = "120px">
+                            <br>
+                            <font face = "Arial" size="2">Máquina de Lavar 8,5Kg Electrolux LES09 Branca 127V</font> 
+                            <hr>
+                            <font face ="Arial" size="2"><strike>R$ 1.299,00</strike></strike></font><br>
+                            <font face ="Arial" size="4" color ="red">R$ 1.099,00</font><br>
+    
+                         </td>
+                         <td width = "20%" align="center" valign = "bottom" >
+    
+                            <img src="./imagens/maquina de lavar brastemp.png" width = "120px">
+                            <br>
+                            <font face = "Arial" size="2">Máquina de Lavar Brastemp 15kg titânio com Ciclo Edredom Especial e Enxágue Anti-Alérgico - BWN15AT</font> 
+                            <hr>
+                            <font face ="Arial" size="2"><strike>R$ 3.689,00</strike></strike></font><br>
+                            <font face ="Arial" size="4" color ="red">R$ 3.229,00</font><br>
+    
+                         </td>
+                         <td width = "20%" align="center" valign = "bottom" >
+    
+                            <img src="./imagens/lava louças brastemp.png" width = "120px">
+                            <br>
+                            <font face = "Arial" size="2">Lava-louças Brastemp BLF08AS Ative! 8 Serviços - Prata</font> 
+                            <hr>
+                            <font face ="Arial" size="2"><strike>R$ 1.999,00</strike></strike></font><br>
+                            <font face ="Arial" size="4" color ="red">R$ 1.799,00</font><br>
+    
+                         </td>
+                         <td width = "20%" align="center" valign = "bottom" >
+                            <img src="./imagens/lava louças brastemp 2.png" width = "120px">
+                            <br>
+                            <font face = "Arial" size="2">Lava-Louças Brastemp BLF14AR 14 Serviços com Painel Touch - Inox</font> 
+                            <hr>
+                            <font face ="Arial" size="2"><strike>R$ 4.499,00</strike></strike></font><br>
+                            <font face ="Arial" size="4" color ="red">R$ 4.239,00</font><br>
+                         </td>
+                     </tr>
+                </tr>
+            </table> -->
+            <br> <br> <br> <br> <br>
+            <br> <br> <br> <br> <br>
+            <footer id = "rodape">
+                <p>
+                    <b id = "formas-de-pagamento">Formas de Pagamento</b>
+                </p>
+                <hr>
+                <img width=300px src="./imagens/Formasdepagamento.png" alt="formas de pagamento">
+                <p>&copy; Recode Pro</p>
+            </footer>
+        </div>
+
+        <script src="./js/script.js"></script>
+    </body>
+
+</html>
